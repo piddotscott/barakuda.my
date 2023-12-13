@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakuda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav img{
+           margin-left: -50%;
+           height: 50px;
+           width: 200px;
+        }
+
+        main {
+            padding: 2em;
+        }
+        main .img{
+            width: 103.2%;
+            margin-top: -30px;
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+
+        footer {
+            background-color: black;
+            color: #3b3b3b;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            font-size: small;
+            
+            width: 100%;
+        }
+        header img {
+            width: 100px; /* Adjust the width as needed */
+            height: 80px; /* Adjust the height as needed */
+        } 
+        main .btn{
+            background-color: yellow;
+            margin-top: -200px;
+            margin-left: 63%;
+            width: 400px;
+            height: 100px;
+            position: absolute; /* Added this to position the button relative to its containing element */
+            z-index: 1; /* Added this to make the button appear in front of other elements */
+            color: black;
+            text-align: center;
+            border: none;
+            border-radius: 20px;
+            font-size:x-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        main .btn:hover{
+            color: white;
+            background-color: rgb(119, 119, 6);
+        }
+        @media (max-width: 768px) {
+            /* Adjust the button size for smaller screens */
+            main .btn {
+                width: 100px;
+                height: 35px;
+                margin-top: -47px;
+                margin-left: 54%;
+                font-size:smaller;
+            }
+            .nav img {
+                width: 130px;
+                height: 30px;
+                margin-left: -20%;
+            }
+        }
+        main .img2{
+            width: 100%;
+            margin-top: 10px;
+        }
+        main .img3{
+            width: 100%;
+            margin-top: 10px;
+        }
+        main .img4{
+            width: 100%;
+            margin-top: 10px;
+            border:2px solid yellow;
+            border-radius: 10px;
+        }
+        main .img5{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="barakuda logo.jpg" alt="Barakuda Logo"></h1>
+        <div class="nav">
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/601159966402?text=Hi%20saya%20berminat%20dengan%20barangan%20Barakuda">
+                <img alt="Chat on WhatsApp" src="WhatsAppButtonWhiteSmall.png" />
+            </a>
+        </div>
+        
+    </header>
+
+    <main>
+        <div>
+            <img class="img" src="welcomebarakuda-01.jpg" alt="welcome">
+        </div>
+        <div>
+            <img class="img2" src="display.jpg" alt="disp">
+        </div>
+        <div>
+            <img class="img3" src="order-01.jpg" alt="order">
+        </div>
+        
+        <!-- Use onclick attribute to handle the button click event -->
+        <button class="btn" onclick="window.location.href='https://wa.me/601159966402?text=Hi%20saya%20berminat%20dengan%20barangan%20Barakuda'" 
+        type="button">Order Here</button>
+
+        <div>
+            <img class="img4" src="closeup.jpg" alt="order">
+        </div>
+        <div>
+            <img class="img5" src="ending-01.jpg" alt="order">
+        </div>
+    </main>
+
+    <footer>
+            <p>&copy; 2023 Barakuda. All rights reserved.</p>
+     </footer>
+</body>
+</html>
